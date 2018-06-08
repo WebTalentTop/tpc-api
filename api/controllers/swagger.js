@@ -10,15 +10,25 @@ const options = {
     },
     tags: [
       {
+        name: 'service',
+        description: 'Service API'
+      },
+      {
         name: 'stocks',
-        description: 'Stocks API'
-      }
+        description: 'Stocks API (Testing)'
+      },
     ],
     schemes: ['http'],
     host: 'localhost:3000',
     basePath: '/api'
   },
-  apis: ['./api/controllers/stocks.js', './api/models/stock-model.js']
+  apis: [
+    './api/controllers/stocks.js',
+    './api/models/stock-model.js',
+    './api/controllers/service.js',
+    './api/models/base-request-model.js',
+    './api/models/base-response-model.js',
+  ]
 }
 
 const swaggerJSDoc = require('swagger-jsdoc')
