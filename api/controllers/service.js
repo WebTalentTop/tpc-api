@@ -12,6 +12,8 @@ const router = express.Router()
  *       - service
  *     produces:
  *       - application/json
+ *       - application/xml
+ *       - application/text
  *     parameters:
  *       - name: request
  *         description: Request object
