@@ -1,4 +1,4 @@
-import * as Swagger from './swagger'
+// import * as Swagger from './swagger'
 
 const express = require('express')
 const router = express.Router()
@@ -27,8 +27,8 @@ const router = express.Router()
  *         schema:
  *           $ref: '#/definitions/BaseResponse'
  */
-router.post('/base/', (req, res, next) => {
-  Swagger.validateModel('BaseRequest', req.body)
+router.post('/base', (req, res, next) => {
+  // Swagger.validateModel('BaseRequest', req.body)
 
   const jwt = require('jsonwebtoken');
   const token = jwt.sign({ user: req.body.user }, 'secret');
@@ -38,7 +38,7 @@ router.post('/base/', (req, res, next) => {
     ResponseCode: "00000",
     responseMessage: { token: token },
   }
-  Swagger.validateModel('BaseResponse', response)
+  // Swagger.validateModel('BaseResponse', response)
   res.send(response)
 })
 
