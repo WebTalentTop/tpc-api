@@ -9,6 +9,11 @@ Installation
     npm install
     npm start
 
+Testing (Mocha)
+============
+
+    npm test
+
 Swagger documentation - HTML and JSON
 ===================================
 

@@ -5,7 +5,7 @@ var bodyParser = require('body-parser')
 
 const port = 3000
 
-// var stocks = require('./api/controllers/stocks')
+var stocks = require('./api/controllers/stocks')
 var service = require('./api/controllers/service')
 var swagger = require('./api/controllers/swagger')
 
@@ -16,7 +16,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cookieParser())
 
-// app.use('/api/stocks', stocks)
+app.use('/api/stocks', stocks)
 app.use('/api/service', service)
 app.use('/api/docs', swagger.router)
 

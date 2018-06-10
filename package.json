@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "babel-node app.js",
+    "test": "mocha --require babel-core/register",
     "lint": "standard --fix"
   },
   "dependencies": {
