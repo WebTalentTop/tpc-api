@@ -30,6 +30,8 @@ Swagger documentation - HTML and JSON
 REST API Endpoints
 ==================
 
+* *POST* http://localhost:3000/api/service/base
+
 * *GET* http://localhost:3000/api/stocks
 * *GET* http://localhost:3000/api/stocks/1
 * *POST* http://localhost:3000/api/stocks
